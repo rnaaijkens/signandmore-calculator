@@ -1,0 +1,140 @@
+// Prijstabel, overgenomen uit dist/signandmore-calculator-v4.html (regels 587-724).
+// Alleen sleutels en bedragen: geen labels, geen DOM, geen state.
+export const DEFAULTS = {
+  // Wand textielframe: frame per lopende meter
+  wf_19_alu:    11,
+  wf_19_zwart:  13.35,
+  wf_19_wit:    13.35,
+  wf_25_alu:    20.85,
+  wf_25_zwart:  24.50,
+  wf_25_wit:    24.50,
+  wf_27_alu:    21.85,
+  wf_27_zwart:  25.50,
+  wf_27_wit:    25.50,
+  wf_muurbevestiging: 14.87,
+  wf_hoeken:    19.57,
+  wf_pees:      3.91,
+
+  // Doek per m²
+  doek_eco:     20.27,
+  doek_samba:   29.95,
+  doek_lightex: 27.75,
+  doek_satijn:  31.16,
+  doek_theater: 34.79,
+
+  // Peesdoek per m² (met levertijd varianten)
+  pd_pees:      3.91,
+  pd_eco_5:     20.27,
+  pd_eco_4:     25.27,
+  pd_eco_3:     30.27,
+  pd_samba_5:   29.95,
+  pd_samba_4:   34.95,
+  pd_samba_3:   39.95,
+  pd_lightex_5: 27.75,
+  pd_lightex_4: 32.75,
+  pd_lightex_3: 37.75,
+  pd_satijn_5:  31.16,
+  pd_satijn_4:  36.16,
+  pd_satijn_3:  41.16,
+  pd_theater_5: 34.79,
+  pd_theater_4: 39.79,
+  pd_theater_3: 44.79,
+
+  // Vrijstaand textielframe per lopende meter
+  vr_44_alu:    75,
+  vr_44_zwart:  76.46,
+  vr_44_wit:    76.46,
+  vr_80_alu:    77.50,
+  vr_80_zwart:  88.39,
+  vr_80_wit:    88.39,
+  vr_hoeken:    31.96,
+  vr_pees:      4.15,
+  vr_peesdoek:  18.75,
+  vr_hangend:   12.14,
+  vr_grondplaten: 48.83,
+  vr_akoestiek_44: 115.29,
+  vr_akoestiek_80: 155.68,
+
+  // Wand LED per lopende meter
+  wl_50_alu:    133,
+  wl_50_zwart:  145,
+  wl_50_wit:    145,
+  wl_60_alu:    134,
+  wl_60_zwart:  146,
+  wl_60_wit:    146,
+  wl_90_alu:    179,
+  wl_90_zwart:  182,
+  wl_90_wit:    182,
+  wl_led:       68,
+  wl_pees:      3.15,
+  wl_peesdoek:  16.75,
+
+  // Kamerschermen
+  ks_44_frame:  21.46,
+  ks_80_frame:  33.39,
+  ks_pees:      3.99,
+  ks_hoeken:    31.96,
+  ks_peesdoek:  25.20,
+  ks_scharnier: 94.50,
+  ks_vloerplaten: 48.83,
+  ks_akoestiek_44: 115.29,
+  ks_akoestiek_80: 155.68,
+
+  // Spandoek per m²
+  sp_bisonyl_5: 19.5,
+  sp_bisonyl_4: 22,
+  sp_bisonyl_3: 28,
+  sp_mesh_5:    19.5,
+  sp_mesh_4:    22,
+  sp_mesh_3:    28,
+  sp_blockout_5: 38,
+  sp_blockout_4: 41,
+  sp_blockout_3: 46,
+
+  // Vlag per m²
+  vl_mast_vlg:    19,
+  vl_mast_poly:   24,
+  vl_banier_vlg:  17.5,
+  vl_banier_poly: 23,
+
+  // Beachvlag — vaste prijs per stuk (excl. mast)
+  bv_straight_80x220:  47.50,
+  bv_straight_80x315:  67.50,
+  bv_straight_90x430:  87.50,
+  bv_square_75x200:    47.50,
+  bv_square_75x300:    67.50,
+  bv_square_75x400:    87.50,
+  bv_wave_65x150:      29.50,
+  bv_wave_65x260:      53.50,
+  bv_wave_65x370:      73.50,
+  bv_drop_85x220:      47.50,
+  bv_drop_85x330:      67.50,
+  bv_drop_85x440:      87.50,
+
+  // Beachvlag — mast per type/afmeting
+  bv_mast_straight_80x220: 25.00,
+  bv_mast_straight_80x315: 29.00,
+  bv_mast_straight_90x430: 32.00,
+  bv_mast_square_75x200:   25.00,
+  bv_mast_square_75x300:   29.00,
+  bv_mast_square_75x400:   32.00,
+  bv_mast_wave_65x150:     25.00,
+  bv_mast_wave_65x260:     29.00,
+  bv_mast_wave_65x370:     32.00,
+  bv_mast_drop_85x220:     25.00,
+  bv_mast_drop_85x330:     29.00,
+  bv_mast_drop_85x440:     32.00,
+
+  // Stickers / Folie per m²
+  st_polymeer_5:    50,
+  st_polymeer_4:    60,
+  st_polymeer_3:    72,
+  st_belettering_5: 55,
+  st_belettering_4: 72,
+  st_belettering_3: 80,
+
+  // Etchfolie / Raamfolie per m²
+  ef_5: 46,
+  ef_4: 54,
+  ef_3: 62,
+};

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign and More — Prijsberekening</title>
+</head>
+<body>
+
+<header>
+  <h1>Sign and More — Prijsberekening</h1>
+  <span class="print-hide">Intern gebruik</span>
+</header>
+
+<div class="container">
+
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('wandframe', this)">Wand textielframe</button>
+    <button class="tab" onclick="showTab('peesdoek', this)">Peesdoek</button>
+    <button class="tab" onclick="showTab('vrijstaand', this)">Vrijstaand frame</button>
+    <button class="tab" onclick="showTab('wandled', this)">Wand LED-frame</button>
+    <button class="tab" onclick="showTab('kamerscherm', this)">Kamerschermen</button>
+    <button class="tab" onclick="showTab('spandoek', this)">Spandoek</button>
+    <button class="tab" onclick="showTab('vlag', this)">Mastvlag / Baniervlag</button>
+    <button class="tab" onclick="showTab('beachvlag', this)">Beachvlag</button>
+    <button class="tab" onclick="showTab('sticker', this)">Stickers / Folie</button>
+    <button class="tab" onclick="showTab('etchfolie', this)">Etchfolie</button>
+    <button class="tab settings-tab" onclick="showTab('prijzen', this)">⚙ Prijzen</button>
+  </div>
+
+  <!-- WAND TEXTIELFRAME -->
+  <div id="tab-wandframe" class="form-card active">
+    <h2>Wand textielframe <span class="tag">incl. montage</span></h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="wf-breedte" placeholder="bv. 120" min="1" oninput="calcWandframe()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="wf-hoogte" placeholder="bv. 80" min="1" oninput="calcWandframe()"></div>
+    </div>
+    <div class="grid-3" style="margin-top:16px">
+      <div class="field">
+        <label>Frame dikte</label>
+        <select id="wf-dikte" onchange="calcWandframe()">
+          <option value="19">19 mm</option>
+          <option value="25">25 mm</option>
+          <option value="27">27 mm</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Frame kleur</label>
+        <select id="wf-kleur" onchange="calcWandframe()">
+          <option value="alu">Aluminium</option>
+          <option value="zwart">Mat zwart</option>
+          <option value="wit">Wit</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Doek</label>
+        <select id="wf-doek" onchange="calcWandframe()">
+          <option value="geen">Zonder doek</option>
+          <option value="eco">Ecodisplay</option>
+          <option value="samba">Samba (LED)</option>
+          <option value="lightex">Lightex (LED)</option>
+          <option value="satijn">Satijn 140 grs/m²</option>
+          <option value="theater">Theater blockout</option>
+        </select>
+      </div>
+    </div>
+    <div id="wf-result"></div>
+  </div>
+
+  <!-- PEESDOEK -->
+  <div id="tab-peesdoek" class="form-card">
+    <h2>Peesdoek diverse materialen</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="pd-breedte" placeholder="bv. 200" min="1" oninput="calcPeesdoek()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="pd-hoogte" placeholder="bv. 100" min="1" oninput="calcPeesdoek()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Soort doek & levertijd</label>
+        <select id="pd-doek" onchange="calcPeesdoek()">
+          <option value="eco">Eco display (5 werkdagen)</option>
+          <option value="eco4">Eco display (4 werkdagen)</option>
+          <option value="eco3">Eco display (3 werkdagen)</option>
+          <option value="samba">Samba voor LED 190grs/m² (5 wkd)</option>
+          <option value="samba4">Samba (4 werkdagen)</option>
+          <option value="samba3">Samba (3 werkdagen)</option>
+          <option value="lightex">Lightex voor LED 260grs/m² (5 wkd)</option>
+          <option value="lightex4">Lightex (4 werkdagen)</option>
+          <option value="lightex3">Lightex (3 werkdagen)</option>
+          <option value="satijn">Satijn 140 grs/m² (5 werkdagen)</option>
+          <option value="satijn4">Satijn (4 werkdagen)</option>
+          <option value="satijn3">Satijn (3 werkdagen)</option>
+          <option value="theater">Theater blockout (5 werkdagen)</option>
+          <option value="theater4">Theater blockout (4 werkdagen)</option>
+          <option value="theater3">Theater blockout (3 werkdagen)</option>
+        </select>
+      </div>
+    </div>
+    <div id="pd-result"></div>
+  </div>
+
+  <!-- VRIJSTAAND -->
+  <div id="tab-vrijstaand" class="form-card">
+    <h2>Vrijstaand textielframe</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="vr-breedte" placeholder="bv. 100" min="1" oninput="calcVrijstaand()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="vr-hoogte" placeholder="bv. 200" min="1" oninput="calcVrijstaand()"></div>
+    </div>
+    <div class="grid-3" style="margin-top:16px">
+      <div class="field">
+        <label>Frame dikte</label>
+        <select id="vr-dikte" onchange="calcVrijstaand()">
+          <option value="44">44 mm</option>
+          <option value="80">80 mm</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Frame kleur</label>
+        <select id="vr-kleur" onchange="calcVrijstaand()">
+          <option value="alu">Aluminium</option>
+          <option value="zwart">Mat zwart</option>
+          <option value="wit">Wit</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Bevestiging</label>
+        <select id="vr-bevestiging" onchange="calcVrijstaand()">
+          <option value="hangend">Hangend aan ogen</option>
+          <option value="vrijstaand">Vrijstaand op grondplaten</option>
+        </select>
+      </div>
+    </div>
+    <div class="field" style="margin-top:16px">
+      <label>Akoestiek</label>
+      <select id="vr-akoestiek" onchange="calcVrijstaand()">
+        <option value="0">Zonder akoestiek verbetering</option>
+        <option value="1">Met akoestiek verbetering (40mm foam)</option>
+      </select>
+    </div>
+    <div id="vr-result"></div>
+  </div>
+
+  <!-- WAND LED -->
+  <div id="tab-wandled" class="form-card">
+    <h2>Wand LED-textielframe</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="wl-breedte" placeholder="bv. 100" min="1" oninput="calcWandLED()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="wl-hoogte" placeholder="bv. 200" min="1" oninput="calcWandLED()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Frame dikte</label>
+        <select id="wl-dikte" onchange="calcWandLED()">
+          <option value="50">50 mm</option>
+          <option value="60">60 mm</option>
+          <option value="90">90 mm</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Frame kleur</label>
+        <select id="wl-kleur" onchange="calcWandLED()">
+          <option value="alu">Aluminium</option>
+          <option value="zwart">Mat zwart</option>
+          <option value="wit">Wit</option>
+        </select>
+      </div>
+    </div>
+    <div id="wl-result"></div>
+  </div>
+
+  <!-- KAMERSCHERMEN -->
+  <div id="tab-kamerscherm" class="form-card">
+    <h2>Kamerschermen</h2>
+    <div class="grid-3">
+      <div class="field"><label>Panel breedte (cm)</label><input type="number" id="ks-breedte" placeholder="bv. 80" min="1" oninput="calcKamerscherm()"></div>
+      <div class="field"><label>Panel hoogte (cm)</label><input type="number" id="ks-hoogte" placeholder="bv. 160" min="1" oninput="calcKamerscherm()"></div>
+      <div class="field"><label>Aantal schermen</label><input type="number" id="ks-aantal" placeholder="bv. 4" min="1" value="1" oninput="calcKamerscherm()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Frame profiel</label>
+        <select id="ks-frame" onchange="calcKamerscherm()">
+          <option value="44">44 mm</option>
+          <option value="80">80 mm</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Akoestiek</label>
+        <select id="ks-akoestiek" onchange="calcKamerscherm()">
+          <option value="0">Zonder akoestiek</option>
+          <option value="1">Met akoestiek verbetering</option>
+        </select>
+      </div>
+    </div>
+    <div id="ks-result"></div>
+  </div>
+
+  <!-- SPANDOEK -->
+  <div id="tab-spandoek" class="form-card">
+    <h2>Spandoek</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="sp-breedte" placeholder="bv. 300" min="1" oninput="calcSpandoek()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="sp-hoogte" placeholder="bv. 100" min="1" oninput="calcSpandoek()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Materiaal</label>
+        <select id="sp-materiaal" onchange="calcSpandoek()">
+          <option value="bisonyl">Bisonyl Frontlit</option>
+          <option value="mesh">Mesh (winddoorlatend)</option>
+          <option value="blockout">Blockout (dubbelzijdig)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Levertijd</label>
+        <select id="sp-levertijd" onchange="calcSpandoek()">
+          <option value="5">5 werkdagen</option>
+          <option value="4">4 werkdagen</option>
+          <option value="3">3 werkdagen</option>
+        </select>
+      </div>
+    </div>
+    <div id="sp-result"></div>
+  </div>
+
+  <!-- VLAG -->
+  <div id="tab-vlag" class="form-card">
+    <h2>Mastvlag / Baniervlag</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="vl-breedte" placeholder="bv. 100" min="1" oninput="calcVlag()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="vl-hoogte" placeholder="bv. 200" min="1" oninput="calcVlag()"></div>
+    </div>
+    <div class="field" style="margin-top:16px">
+      <label>Type & materiaal</label>
+      <select id="vl-materiaal" onchange="calcVlag()">
+        <option value="mast_vlg">Mastvlag — Vlaggenstof 117 Grs/m²</option>
+        <option value="mast_poly">Mastvlag — Polymesh (winddoorlatend)</option>
+        <option value="banier_vlg">Baniervlag — Vlaggenstof 117 Grs/m²</option>
+        <option value="banier_poly">Baniervlag — Polymesh (winddoorlatend)</option>
+      </select>
+    </div>
+    <div id="vl-result"></div>
+  </div>
+
+  <!-- BEACHVLAG -->
+  <div id="tab-beachvlag" class="form-card">
+    <h2>Beachvlag</h2>
+    <div class="grid-2">
+      <div class="field">
+        <label>Type beachvlag</label>
+        <select id="bv-type" onchange="bvUpdateSizes()">
+          <option value="straight">Straightflag</option>
+          <option value="square">Squareflag</option>
+          <option value="wave">Waveflag</option>
+          <option value="drop">Dropflag</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Afmeting</label>
+        <select id="bv-afmeting" onchange="calcBeachvlag()"></select>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Mast inbegrepen?</label>
+        <select id="bv-mast" onchange="calcBeachvlag()">
+          <option value="0">Zonder mast</option>
+          <option value="1">Met mast</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Aantal</label>
+        <input type="number" id="bv-aantal" value="1" min="1" oninput="calcBeachvlag()">
+      </div>
+    </div>
+    <div id="bv-result"></div>
+  </div>
+
+  <!-- STICKERS / FOLIE -->
+  <div id="tab-sticker" class="form-card">
+    <h2>Stickers / Folie</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="st-breedte" placeholder="bv. 100" min="1" oninput="calcSticker()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="st-hoogte" placeholder="bv. 150" min="1" oninput="calcSticker()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Materiaal</label>
+        <select id="st-materiaal" onchange="calcSticker()">
+          <option value="polymeer">Polymeerfolie</option>
+          <option value="belettering">Beletteringsfolie</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Levertijd</label>
+        <select id="st-levertijd" onchange="calcSticker()">
+          <option value="5">5 werkdagen</option>
+          <option value="4">4 werkdagen</option>
+          <option value="3">3 werkdagen</option>
+        </select>
+      </div>
+    </div>
+    <div id="st-result"></div>
+  </div>
+
+  <!-- ETCHFOLIE -->
+  <div id="tab-etchfolie" class="form-card">
+    <h2>Etchfolie / Raamfolie</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="ef-breedte" placeholder="bv. 100" min="1" oninput="calcEtchfolie()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="ef-hoogte" placeholder="bv. 150" min="1" oninput="calcEtchfolie()"></div>
+    </div>
+    <div class="field" style="margin-top:16px">
+      <label>Levertijd</label>
+      <select id="ef-levertijd" onchange="calcEtchfolie()">
+        <option value="5">5 werkdagen</option>
+        <option value="4">4 werkdagen</option>
+        <option value="3">3 werkdagen</option>
+      </select>
+    </div>
+    <div id="ef-result"></div>
+  </div>
+
+  <!-- PRIJZEN EDITOR -->
+  <div id="tab-prijzen" class="form-card">
+    <div class="settings-header">
+      <h2>Prijzen bewerken</h2>
+      <div class="settings-actions">
+        <span id="save-indicator" class="save-indicator">Opgeslagen</span>
+        <button class="btn-reset" onclick="resetPrices()">Herstel standaardprijzen</button>
+      </div>
+    </div>
+    <p style="font-size:13px; color:var(--muted); margin-bottom:24px;">Alle prijzen worden automatisch opgeslagen op deze computer. De berekeningen gebruiken direct deze waarden.</p>
+
+    <div id="price-editor"></div>
+  </div>
+
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

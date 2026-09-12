@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign and More — Prijsberekening</title>
+  <script type="module" crossorigin>(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();function e(e,t){document.querySelectorAll(`.form-card`).forEach(e=>e.classList.remove(`active`)),document.querySelectorAll(`.tab`).forEach(e=>e.classList.remove(`active`)),document.getElementById(`tab-`+e).classList.add(`active`),t.classList.add(`active`)}function t(e){return parseFloat(document.getElementById(e).value)||0}function n(e){return document.getElementById(e).value}function r(e){document.getElementById(e).innerHTML=``}var i={wf_19_alu:11,wf_19_zwart:13.35,wf_19_wit:13.35,wf_25_alu:20.85,wf_25_zwart:24.5,wf_25_wit:24.5,wf_27_alu:21.85,wf_27_zwart:25.5,wf_27_wit:25.5,wf_muurbevestiging:14.87,wf_hoeken:19.57,wf_pees:3.91,doek_eco:20.27,doek_samba:29.95,doek_lightex:27.75,doek_satijn:31.16,doek_theater:34.79,pd_pees:3.91,pd_eco_5:20.27,pd_eco_4:25.27,pd_eco_3:30.27,pd_samba_5:29.95,pd_samba_4:34.95,pd_samba_3:39.95,pd_lightex_5:27.75,pd_lightex_4:32.75,pd_lightex_3:37.75,pd_satijn_5:31.16,pd_satijn_4:36.16,pd_satijn_3:41.16,pd_theater_5:34.79,pd_theater_4:39.79,pd_theater_3:44.79,vr_44_alu:75,vr_44_zwart:76.46,vr_44_wit:76.46,vr_80_alu:77.5,vr_80_zwart:88.39,vr_80_wit:88.39,vr_hoeken:31.96,vr_pees:4.15,vr_peesdoek:18.75,vr_hangend:12.14,vr_grondplaten:48.83,vr_akoestiek_44:115.29,vr_akoestiek_80:155.68,wl_50_alu:133,wl_50_zwart:145,wl_50_wit:145,wl_60_alu:134,wl_60_zwart:146,wl_60_wit:146,wl_90_alu:179,wl_90_zwart:182,wl_90_wit:182,wl_led:68,wl_pees:3.15,wl_peesdoek:16.75,ks_44_frame:21.46,ks_80_frame:33.39,ks_pees:3.99,ks_hoeken:31.96,ks_peesdoek:25.2,ks_scharnier:94.5,ks_vloerplaten:48.83,ks_akoestiek_44:115.29,ks_akoestiek_80:155.68,sp_bisonyl_5:19.5,sp_bisonyl_4:22,sp_bisonyl_3:28,sp_mesh_5:19.5,sp_mesh_4:22,sp_mesh_3:28,sp_blockout_5:38,sp_blockout_4:41,sp_blockout_3:46,vl_mast_vlg:19,vl_mast_poly:24,vl_banier_vlg:17.5,vl_banier_poly:23,bv_straight_80x220:47.5,bv_straight_80x315:67.5,bv_straight_90x430:87.5,bv_square_75x200:47.5,bv_square_75x300:67.5,bv_square_75x400:87.5,bv_wave_65x150:29.5,bv_wave_65x260:53.5,bv_wave_65x370:73.5,bv_drop_85x220:47.5,bv_drop_85x330:67.5,bv_drop_85x440:87.5,bv_mast_straight_80x220:25,bv_mast_straight_80x315:29,bv_mast_straight_90x430:32,bv_mast_square_75x200:25,bv_mast_square_75x300:29,bv_mast_square_75x400:32,bv_mast_wave_65x150:25,bv_mast_wave_65x260:29,bv_mast_wave_65x370:32,bv_mast_drop_85x220:25,bv_mast_drop_85x330:29,bv_mast_drop_85x440:32,st_polymeer_5:50,st_polymeer_4:60,st_polymeer_3:72,st_belettering_5:55,st_belettering_4:72,st_belettering_3:80,ef_5:46,ef_4:54,ef_3:62},a=`signandmore_prices`,o={};function s(){return o}function c(){try{let e=localStorage.getItem(a);o=e?{...i,...JSON.parse(e)}:{...i}}catch{o={...i}}}function l(){try{localStorage.setItem(a,JSON.stringify(o)),f()}catch{}}function u(){o={...i},localStorage.removeItem(a)}function d(e,t){o[e]=t}function f(){let e=document.getElementById(`save-indicator`);e.classList.add(`show`),setTimeout(()=>e.classList.remove(`show`),1800)}var p=[{title:`Wand textielframe — frame per meter (€/m)`,fields:[{key:`wf_19_alu`,label:`19mm Aluminium`},{key:`wf_19_zwart`,label:`19mm Mat zwart`},{key:`wf_19_wit`,label:`19mm Wit`},{key:`wf_25_alu`,label:`25mm Aluminium`},{key:`wf_25_zwart`,label:`25mm Mat zwart`},{key:`wf_25_wit`,label:`25mm Wit`},{key:`wf_27_alu`,label:`27mm Aluminium`},{key:`wf_27_zwart`,label:`27mm Mat zwart`},{key:`wf_27_wit`,label:`27mm Wit`},{key:`wf_pees`,label:`Pees per meter`},{key:`wf_muurbevestiging`,label:`Muurbevestiging (vast)`},{key:`wf_hoeken`,label:`4 hoeken (vast)`}]},{title:`Doek per m² (voor wand textielframe)`,fields:[{key:`doek_eco`,label:`Ecodisplay`},{key:`doek_samba`,label:`Samba (LED)`},{key:`doek_lightex`,label:`Lightex (LED)`},{key:`doek_satijn`,label:`Satijn 140 grs/m²`},{key:`doek_theater`,label:`Theater blockout`}]},{title:`Peesdoek per m² (alle levertijden)`,fields:[{key:`pd_pees`,label:`Pees per meter`},{key:`pd_eco_5`,label:`Eco display 5 wkd`},{key:`pd_eco_4`,label:`Eco display 4 wkd`},{key:`pd_eco_3`,label:`Eco display 3 wkd`},{key:`pd_samba_5`,label:`Samba 5 wkd`},{key:`pd_samba_4`,label:`Samba 4 wkd`},{key:`pd_samba_3`,label:`Samba 3 wkd`},{key:`pd_lightex_5`,label:`Lightex 5 wkd`},{key:`pd_lightex_4`,label:`Lightex 4 wkd`},{key:`pd_lightex_3`,label:`Lightex 3 wkd`},{key:`pd_satijn_5`,label:`Satijn 5 wkd`},{key:`pd_satijn_4`,label:`Satijn 4 wkd`},{key:`pd_satijn_3`,label:`Satijn 3 wkd`},{key:`pd_theater_5`,label:`Theater 5 wkd`},{key:`pd_theater_4`,label:`Theater 4 wkd`},{key:`pd_theater_3`,label:`Theater 3 wkd`}]},{title:`Vrijstaand textielframe — frame per meter (€/m)`,fields:[{key:`vr_44_alu`,label:`44mm Aluminium`},{key:`vr_44_zwart`,label:`44mm Mat zwart`},{key:`vr_44_wit`,label:`44mm Wit`},{key:`vr_80_alu`,label:`80mm Aluminium`},{key:`vr_80_zwart`,label:`80mm Mat zwart`},{key:`vr_80_wit`,label:`80mm Wit`},{key:`vr_hoeken`,label:`4 hoeken (vast)`},{key:`vr_pees`,label:`Pees per meter`},{key:`vr_peesdoek`,label:`Peesdoek per m²`},{key:`vr_hangend`,label:`Bevestiging: hangend`},{key:`vr_grondplaten`,label:`Bevestiging: grondplaten`},{key:`vr_akoestiek_44`,label:`Akoestiek foam 40mm (per m²)`},{key:`vr_akoestiek_80`,label:`Akoestiek foam 80mm (per m²)`}]},{title:`Wand LED-frame — per meter (€/m)`,fields:[{key:`wl_50_alu`,label:`50mm Aluminium`},{key:`wl_50_zwart`,label:`50mm Mat zwart`},{key:`wl_50_wit`,label:`50mm Wit`},{key:`wl_60_alu`,label:`60mm Aluminium`},{key:`wl_60_zwart`,label:`60mm Mat zwart`},{key:`wl_60_wit`,label:`60mm Wit`},{key:`wl_90_alu`,label:`90mm Aluminium`},{key:`wl_90_zwart`,label:`90mm Mat zwart`},{key:`wl_90_wit`,label:`90mm Wit`},{key:`wl_led`,label:`LED strip per meter`},{key:`wl_pees`,label:`Pees per meter`},{key:`wl_peesdoek`,label:`Peesdoek per m²`}]},{title:`Kamerschermen`,fields:[{key:`ks_44_frame`,label:`44mm frame per meter`},{key:`ks_80_frame`,label:`80mm frame per meter`},{key:`ks_pees`,label:`Pees per meter`},{key:`ks_hoeken`,label:`4 hoeken per scherm`},{key:`ks_peesdoek`,label:`Peesdoek per m²`},{key:`ks_scharnier`,label:`Scharnier per scherm`},{key:`ks_vloerplaten`,label:`Vloerplaten (basis, vast)`},{key:`ks_akoestiek_44`,label:`Akoestiek foam 40mm (per m²)`},{key:`ks_akoestiek_80`,label:`Akoestiek foam 80mm (per m²)`}]},{title:`Spandoek per m²`,fields:[{key:`sp_bisonyl_5`,label:`Bisonyl 5 werkdagen`},{key:`sp_bisonyl_4`,label:`Bisonyl 4 werkdagen`},{key:`sp_bisonyl_3`,label:`Bisonyl 3 werkdagen`},{key:`sp_mesh_5`,label:`Mesh 5 werkdagen`},{key:`sp_mesh_4`,label:`Mesh 4 werkdagen`},{key:`sp_mesh_3`,label:`Mesh 3 werkdagen`},{key:`sp_blockout_5`,label:`Blockout 5 werkdagen`},{key:`sp_blockout_4`,label:`Blockout 4 werkdagen`},{key:`sp_blockout_3`,label:`Blockout 3 werkdagen`}]},{title:`Mastvlag / Baniervlag per m²`,fields:[{key:`vl_mast_vlg`,label:`Mastvlag — Vlaggenstof`},{key:`vl_mast_poly`,label:`Mastvlag — Polymesh`},{key:`vl_banier_vlg`,label:`Baniervlag — Vlaggenstof`},{key:`vl_banier_poly`,label:`Baniervlag — Polymesh`}]},{title:`Beachvlag — prijs per stuk`,fields:[{key:`bv_straight_80x220`,label:`Straightflag 80x220cm`},{key:`bv_straight_80x315`,label:`Straightflag 80x315cm`},{key:`bv_straight_90x430`,label:`Straightflag 90x430cm`},{key:`bv_square_75x200`,label:`Squareflag 75x200cm`},{key:`bv_square_75x300`,label:`Squareflag 75x300cm`},{key:`bv_square_75x400`,label:`Squareflag 75x400cm`},{key:`bv_wave_65x150`,label:`Waveflag 65x150cm`},{key:`bv_wave_65x260`,label:`Waveflag 65x260cm`},{key:`bv_wave_65x370`,label:`Waveflag 65x370cm`},{key:`bv_drop_85x220`,label:`Dropflag 85x220cm`},{key:`bv_drop_85x330`,label:`Dropflag 85x330cm`},{key:`bv_drop_85x440`,label:`Dropflag 85x440cm`}]},{title:`Beachvlag — mast per afmeting`,fields:[{key:`bv_mast_straight_80x220`,label:`Mast Straightflag 80x220cm`},{key:`bv_mast_straight_80x315`,label:`Mast Straightflag 80x315cm`},{key:`bv_mast_straight_90x430`,label:`Mast Straightflag 90x430cm`},{key:`bv_mast_square_75x200`,label:`Mast Squareflag 75x200cm`},{key:`bv_mast_square_75x300`,label:`Mast Squareflag 75x300cm`},{key:`bv_mast_square_75x400`,label:`Mast Squareflag 75x400cm`},{key:`bv_mast_wave_65x150`,label:`Mast Waveflag 65x150cm`},{key:`bv_mast_wave_65x260`,label:`Mast Waveflag 65x260cm`},{key:`bv_mast_wave_65x370`,label:`Mast Waveflag 65x370cm`},{key:`bv_mast_drop_85x220`,label:`Mast Dropflag 85x220cm`},{key:`bv_mast_drop_85x330`,label:`Mast Dropflag 85x330cm`},{key:`bv_mast_drop_85x440`,label:`Mast Dropflag 85x440cm`}]},{title:`Stickers / Folie per m²`,fields:[{key:`st_polymeer_5`,label:`Polymeerfolie 5 werkdagen`},{key:`st_polymeer_4`,label:`Polymeerfolie 4 werkdagen`},{key:`st_polymeer_3`,label:`Polymeerfolie 3 werkdagen`},{key:`st_belettering_5`,label:`Beletteringsfolie 5 werkdagen`},{key:`st_belettering_4`,label:`Beletteringsfolie 4 werkdagen`},{key:`st_belettering_3`,label:`Beletteringsfolie 3 werkdagen`}]},{title:`Etchfolie / Raamfolie per m²`,fields:[{key:`ef_5`,label:`Etchfolie 5 werkdagen`},{key:`ef_4`,label:`Etchfolie 4 werkdagen`},{key:`ef_3`,label:`Etchfolie 3 werkdagen`}]}];function m(){let e=document.getElementById(`price-editor`);e.innerHTML=p.map(e=>`
+    <div class="price-section">
+      <h3>${e.title}</h3>
+      <div class="price-grid">
+        ${e.fields.map(e=>`
+          <div class="price-field">
+            <label>${e.label}</label>
+            <div class="euro-wrap">
+              <input type="number" step="0.01" min="0"
+                value="${(s()[e.key]||0).toFixed(2)}"
+                data-key="${e.key}"
+                onchange="updatePrice(this)">
+            </div>
+          </div>
+        `).join(``)}
+      </div>
+    </div>
+  `).join(``)}function h(e){let t=e.dataset.key,n=parseFloat(e.value);!isNaN(n)&&n>=0&&(d(t,n),l())}function g(){confirm(`Wil je alle prijzen terugzetten naar de oorspronkelijke waarden?`)&&(u(),m(),f())}function _(e){return`€\xA0`+e.toFixed(2).replace(`.`,`,`)}var v=1.21;function y(e,t,n,r){let i=document.getElementById(e);if(n<=0||isNaN(n)){i.innerHTML=`<div class="empty">Voer afmetingen in om de prijs te berekenen.</div>`;return}i.innerHTML=`
+    <div class="breakdown" style="margin-top:20px">
+      ${t.map(e=>`<div class="breakdown-row"><span class="key">${e.label}</span><span class="val">${_(e.val)}</span></div>`).join(``)}
+      <div class="breakdown-row total"><span>Totaal excl. BTW</span><span>${_(n)}</span></div>
+      <div class="breakdown-row total-btw"><span>Totaal incl. BTW (21%)</span><span>${_(n*v)}</span></div>
+    </div>
+    <div class="result-box">
+      <div>
+        <div class="label">Prijs excl. BTW</div>
+        <div class="price">${_(n)}</div>
+        <div class="sub">incl. BTW: ${_(n*v)}</div>
+      </div>
+      <button class="btn-pdf" onclick="window.print()">Afdrukken / PDF</button>
+    </div>
+    ${r?`<p class="note">${r}</p>`:``}
+  `}function b(e){return function(t){return parseFloat(e[t])||0}}function x({breedte:e,hoogte:t,dikte:n,kleur:r,doek:i},a){let o=b(a),s=e,c=t,l=(c+s+s+c)/100,u=s*c/1e4,d=o(`wf_${n}_${r}`),f=i===`geen`?0:o(`doek_${i}`),p=o(`wf_pees`),m=o(`wf_muurbevestiging`),h=o(`wf_hoeken`),g=l*d,_=l*p,v=u*f,y=i!==`geen`;return{omtrek:l,opp:u,framePerM:d,doekPerM2:f,pees:p,muur:m,hoeken:h,frameKosten:g,peesKosten:_,doekKosten:v,metDoek:y,total:g+m+h+(y?_+v:0)}}function S(){let e=t(`wf-breedte`),i=t(`wf-hoogte`);if(!e||!i){r(`wf-result`);return}let a=n(`wf-dikte`),o=n(`wf-kleur`),c=n(`wf-doek`),{omtrek:l,opp:u,framePerM:d,doekPerM2:f,pees:p,muur:m,hoeken:h,frameKosten:g,peesKosten:v,doekKosten:b,metDoek:S,total:C}=x({breedte:e,hoogte:i,dikte:a,kleur:o,doek:c},s());y(`wf-result`,[{label:`Frame ${a}mm ${o} — ${l.toFixed(2)} m × ${_(d)}/m`,val:g},{label:`Muurbevestiging`,val:m},{label:`4 hoeken`,val:h},...S?[{label:`Pees — ${l.toFixed(2)} m × ${_(p)}/m`,val:v},{label:`Doek (${c}) — ${u.toFixed(3)} m² × ${_(f)}/m²`,val:b}]:[]],C,`${e} × ${i} cm — Omtrek: ${l.toFixed(2)} m — Opp: ${u.toFixed(3)} m²`)}var C={eco:`pd_eco_5`,eco4:`pd_eco_4`,eco3:`pd_eco_3`,samba:`pd_samba_5`,samba4:`pd_samba_4`,samba3:`pd_samba_3`,lightex:`pd_lightex_5`,lightex4:`pd_lightex_4`,lightex3:`pd_lightex_3`,satijn:`pd_satijn_5`,satijn4:`pd_satijn_4`,satijn3:`pd_satijn_3`,theater:`pd_theater_5`,theater4:`pd_theater_4`,theater3:`pd_theater_3`};function w({breedte:e,hoogte:t,doek:n},r){let i=b(r),a=e,o=t,s=a*o/1e4,c=(a+o)/50,l=i(`pd_pees`),u=i(C[n]),d=c*l,f=s*u,p=(d+f)/100;return{opp:s,omtrek:c,pees:l,doekPerM2:u,peesKosten:d,doekKosten:f,doekRegel:f/100,peesRegel:d/100,total:p}}function T(){let e=t(`pd-breedte`),i=t(`pd-hoogte`);if(!e||!i){r(`pd-result`);return}let{opp:a,omtrek:o,pees:c,doekPerM2:l,doekRegel:u,peesRegel:d,total:f}=w({breedte:e,hoogte:i,doek:n(`pd-doek`)},s());y(`pd-result`,[{label:`Peesdoek — ${a.toFixed(3)} m² × ${_(l)}/m²`,val:u},{label:`Pees — ${o.toFixed(2)} m × ${_(c)}/m`,val:d}],f,`${e} × ${i} cm — Opp: ${a.toFixed(3)} m²`)}function E({breedte:e,hoogte:t,dikte:n,kleur:r,bevestiging:i,akoestiek:a},o){let s=b(o),c=e,l=t,u=(l+c+c+l)/100,d=c*l/1e4,f=i===`hangend`?`vr_hangend`:`vr_grondplaten`,p=parseInt(a),m=s(`vr_${n}_${r}`),h=s(`vr_pees`),g=s(`vr_hoeken`),_=s(`vr_peesdoek`),v=s(f),y=s(`vr_akoestiek_${n}`),x=u*m,S=u*h,C=d*_*2/100,w=p*d*y;return{omtrek:u,opp:d,framePerM:m,pees:h,hoeken:g,doekPerM2:_,akoestiekM2:y,akoestiekAan:p,bevestiging:v,frameKosten:x,peesKosten:S,doekKosten:C,akoestiekKosten:w,total:x+S+C+g+v+w}}function D(){let e=t(`vr-breedte`),i=t(`vr-hoogte`);if(!e||!i){r(`vr-result`);return}let a=n(`vr-dikte`),o=n(`vr-kleur`),c=n(`vr-bevestiging`),{omtrek:l,opp:u,framePerM:d,pees:f,hoeken:p,akoestiekAan:m,bevestiging:h,frameKosten:g,peesKosten:v,doekKosten:b,akoestiekKosten:x,total:S}=E({breedte:e,hoogte:i,dikte:a,kleur:o,bevestiging:c,akoestiek:n(`vr-akoestiek`)},s());y(`vr-result`,[{label:`Frame ${a}mm ${o} — ${l.toFixed(2)} m × ${_(d)}/m`,val:g},{label:`Pees ×2 — ${l.toFixed(2)} m × ${_(f)}/m`,val:v},{label:`Peesdoek 2 zijden — ${u.toFixed(3)} m²`,val:b},{label:`4 hoeken`,val:p},{label:`Bevestiging (${c})`,val:h},...m?[{label:`Akoestiek foam — ${u.toFixed(3)} m²`,val:x}]:[]],S,`${e} × ${i} cm — Omtrek: ${l.toFixed(2)} m — Opp: ${u.toFixed(3)} m²`)}function O({breedte:e,hoogte:t,dikte:n,kleur:r},i){let a=b(i),o=e,s=t,c=(s+o+o+s)/100,l=o*s/1e4,u=a(`wl_${n}_${r}`),d=a(`wl_led`),f=a(`wl_pees`),p=a(`wl_peesdoek`),m=c*u,h=c*d,g=c*f,_=l*p/100;return{omtrek:c,opp:l,framePerM:u,led:d,pees:f,doekPerM2:p,frameKosten:m,ledKosten:h,peesKosten:g,doekKosten:_,total:m+h+g+_}}function k(){let e=t(`wl-breedte`),i=t(`wl-hoogte`);if(!e||!i){r(`wl-result`);return}let a=n(`wl-dikte`),o=n(`wl-kleur`),{omtrek:c,opp:l,framePerM:u,led:d,pees:f,frameKosten:p,ledKosten:m,peesKosten:h,doekKosten:g,total:v}=O({breedte:e,hoogte:i,dikte:a,kleur:o},s());y(`wl-result`,[{label:`Frame ${a}mm ${o} — ${c.toFixed(2)} m × ${_(u)}/m`,val:p},{label:`LED strip — ${c.toFixed(2)} m × ${_(d)}/m`,val:m},{label:`Pees — ${c.toFixed(2)} m × ${_(f)}/m`,val:h},{label:`Peesdoek — ${l.toFixed(3)} m²`,val:g}],v,`${e} × ${i} cm — Omtrek: ${c.toFixed(2)} m`)}function A({breedte:e,hoogte:t,aantal:n,frame:r,akoestiek:i},a){let o=b(a),s=e,c=t,l=(s+c)/50,u=s*c/1e4,d=parseInt(i),f=o(`ks_${r}_frame`),p=o(`ks_pees`),m=o(`ks_hoeken`),h=o(`ks_peesdoek`),g=o(`ks_scharnier`),_=o(`ks_vloerplaten`),v=o(`ks_akoestiek_${r}`),y=l*f,x=l*2*p,S=u*2*h,C=d*u*v,w=g+y+x+S+C+m;return{omtrek:l,opp:u,framePerM:f,pees:p,hoeken:m,doekPerM2:h,scharnier:g,vloerplaten:_,akoestiekM2:v,akoestiekAan:d,frameKosten:y,peesKosten:x,doekKosten:S,akoestiekKosten:C,perScherm:w,total:_-g+n*w}}function j(){let e=t(`ks-breedte`),i=t(`ks-hoogte`),a=t(`ks-aantal`)||1;if(!e||!i){r(`ks-result`);return}let o=n(`ks-frame`),{omtrek:c,hoeken:l,scharnier:u,vloerplaten:d,akoestiekAan:f,frameKosten:p,peesKosten:m,doekKosten:h,akoestiekKosten:g,total:_}=A({breedte:e,hoogte:i,aantal:a,frame:o,akoestiek:n(`ks-akoestiek`)},s());y(`ks-result`,[{label:`Vloerplaten (basis)`,val:d},{label:`Scharnieren — ${a}×`,val:u*a},{label:`Frame ${o}mm — ${a}× ${c.toFixed(2)} m`,val:p*a},{label:`Pees ×2 — ${a} schermen`,val:m*a},{label:`Peesdoek 2 zijden — ${a} schermen`,val:h*a},{label:`4 hoeken — ${a}×`,val:l*a},...f?[{label:`Akoestiek — ${a} schermen`,val:g*a}]:[]],_,`${a} scherm(en) van ${e}×${i} cm — Prijs excl. BTW`)}function M({breedte:e,hoogte:t,materiaal:n,levertijd:r},i){let a=b(i),o=e*t/1e4,s=a(`sp_${n}_${r}`);return{opp:o,prijs:s,total:o*s}}function N(){let e=t(`sp-breedte`),i=t(`sp-hoogte`);if(!e||!i){r(`sp-result`);return}let a=n(`sp-materiaal`),o=n(`sp-levertijd`),{opp:c,prijs:l,total:u}=M({breedte:e,hoogte:i,materiaal:a,levertijd:o},s());y(`sp-result`,[{label:`${a} ${o} wkd — ${c.toFixed(3)} m² × ${_(l)}/m²`,val:u}],u,`${e} × ${i} cm — Opp: ${c.toFixed(3)} m²`)}function P({breedte:e,hoogte:t,materiaal:n},r){let i=b(r),a=e*t/1e4,o=i(`vl_${n}`);return{opp:a,prijs:o,total:a*o}}function F(){let e=t(`vl-breedte`),i=t(`vl-hoogte`);if(!e||!i){r(`vl-result`);return}let a=n(`vl-materiaal`),{opp:o,prijs:c,total:l}=P({breedte:e,hoogte:i,materiaal:a},s());y(`vl-result`,[{label:`${a.replace(`_`,` `)} — ${o.toFixed(3)} m² × ${_(c)}/m²`,val:l}],l,`${e} × ${i} cm — Opp: ${o.toFixed(3)} m²`)}var I={straight:[`80x220`,`80x315`,`90x430`],square:[`75x200`,`75x300`,`75x400`],wave:[`65x150`,`65x260`,`65x370`],drop:[`85x220`,`85x330`,`85x440`]};function L({type:e,afmeting:t,metMast:n,aantal:r},i){let a=b(i),o=a(`bv_${e}_${t}`),s=n?a(`bv_mast_${e}_${t}`):0;return{flagPrijs:o,mastPrijs:s,total:(o+s)*r}}function R(){let e=n(`bv-type`),t=document.getElementById(`bv-afmeting`),r=t.value;t.innerHTML=I[e].map(e=>`<option value="`+e+`"`+(e===r?` selected`:``)+`>`+e+` cm</option>`).join(``),z()}function z(){let e=n(`bv-type`),t=n(`bv-afmeting`),i=parseInt(n(`bv-mast`)),a=parseInt(document.getElementById(`bv-aantal`).value)||1;if(!t){r(`bv-result`);return}let{flagPrijs:o,mastPrijs:c,total:l}=L({type:e,afmeting:t,metMast:i,aantal:a},s()),u=[{label:e.charAt(0).toUpperCase()+e.slice(1)+`flag `+t+` cm — `+a+`×`,val:o*a}];i&&u.push({label:`Mast — `+a+`×`,val:c*a}),y(`bv-result`,u,l,a+` vlag(gen) — `+e+` `+t+` cm`)}function B({breedte:e,hoogte:t,materiaal:n,levertijd:r},i){let a=b(i),o=e*t/1e4,s=a(`st_${n}_${r}`);return{opp:o,prijs:s,total:o*s}}function V(){let e=t(`st-breedte`),i=t(`st-hoogte`);if(!e||!i){r(`st-result`);return}let a=n(`st-materiaal`),o=n(`st-levertijd`),{opp:c,prijs:l,total:u}=B({breedte:e,hoogte:i,materiaal:a,levertijd:o},s());y(`st-result`,[{label:a+` `+o+` wkd — `+c.toFixed(3)+` m² × `+_(l)+`/m²`,val:u}],u,e+` × `+i+` cm — Opp: `+c.toFixed(3)+` m²`)}function H({breedte:e,hoogte:t,levertijd:n},r){let i=b(r),a=e*t/1e4,o=i(`ef_${n}`);return{opp:a,prijs:o,total:a*o}}function U(){let e=t(`ef-breedte`),i=t(`ef-hoogte`);if(!e||!i){r(`ef-result`);return}let a=n(`ef-levertijd`),{opp:o,prijs:c,total:l}=H({breedte:e,hoogte:i,levertijd:a},s());y(`ef-result`,[{label:`Etchfolie `+a+` wkd — `+o.toFixed(3)+` m² × `+_(c)+`/m²`,val:l}],l,e+` × `+i+` cm — Opp: `+o.toFixed(3)+` m²`)}Object.assign(window,{showTab:e,updatePrice:h,resetPrices:g,bvUpdateSizes:R,calcWandframe:S,calcPeesdoek:T,calcVrijstaand:D,calcWandLED:k,calcKamerscherm:j,calcSpandoek:N,calcVlag:F,calcBeachvlag:z,calcSticker:V,calcEtchfolie:U}),c(),m(),R();</script>
+  <style rel="stylesheet" crossorigin>*{box-sizing:border-box;margin:0;padding:0}:root{--brand:#1a1a2e;--accent:#e63946;--surface:#fff;--bg:#f4f3ef;--border:#e0ddd6;--text:#1a1a1a;--muted:#6b6860;--radius:10px;--shadow:0 2px 12px #00000014}body{background:var(--bg);color:var(--text);min-height:100vh;padding:0 0 60px;font-family:Helvetica Neue,Arial,sans-serif}header{background:var(--brand);color:#fff;justify-content:space-between;align-items:center;padding:20px 32px;display:flex}header h1{letter-spacing:-.3px;font-size:18px;font-weight:600}header span{opacity:.6;font-size:13px}.container{max-width:980px;margin:0 auto;padding:32px 24px}.tabs{flex-wrap:wrap;gap:6px;margin-bottom:28px;display:flex}.tab{border:1.5px solid var(--border);background:var(--surface);cursor:pointer;color:var(--muted);border-radius:20px;padding:8px 16px;font-size:13px;font-weight:500;transition:all .15s}.tab:hover{border-color:var(--brand);color:var(--brand)}.tab.active{background:var(--brand);border-color:var(--brand);color:#fff}.tab.settings-tab{color:var(--muted);border-color:#c9c6bf}.tab.settings-tab.active{color:#fff;background:#4a4a3a;border-color:#4a4a3a}.form-card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);padding:28px;display:none}.form-card.active{display:block}.form-card h2{border-bottom:1px solid var(--border);color:var(--brand);margin-bottom:24px;padding-bottom:16px;font-size:16px;font-weight:600}.grid-2{grid-template-columns:1fr 1fr;gap:20px;display:grid}.grid-3{grid-template-columns:1fr 1fr 1fr;gap:20px;display:grid}.grid-4{grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;display:grid}@media (width<=640px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}.field{flex-direction:column;gap:6px;display:flex}.field label{color:var(--muted);font-size:13px;font-weight:500}input[type=number],select{border:1.5px solid var(--border);width:100%;color:var(--text);appearance:none;background:#fff;border-radius:7px;outline:none;padding:10px 12px;font-size:15px;transition:border-color .15s}input[type=number]:focus,select:focus{border-color:var(--brand)}select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6860' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-position:right 12px center;background-repeat:no-repeat;padding-right:32px}.breakdown{border:1px solid var(--border);border-radius:var(--radius);background:#f8f7f4;margin-top:16px;overflow:hidden}.breakdown-row{border-bottom:1px solid var(--border);justify-content:space-between;padding:10px 16px;font-size:13px;display:flex}.breakdown-row:last-child{border-bottom:none}.breakdown-row .key{color:var(--muted)}.breakdown-row .val{font-weight:500}.breakdown-row.total{background:#eceae5;font-size:14px;font-weight:600}.breakdown-row.total-btw{background:#dedad4;font-size:15px;font-weight:700}.result-box{background:var(--brand);color:#fff;border-radius:var(--radius);justify-content:space-between;align-items:center;gap:16px;margin-top:16px;padding:24px 28px;display:flex}.result-box .label{opacity:.7;margin-bottom:4px;font-size:13px}.result-box .price{letter-spacing:-1px;font-size:32px;font-weight:700}.result-box .sub{opacity:.6;margin-top:4px;font-size:12px}.btn-pdf{color:#fff;cursor:pointer;white-space:nowrap;background:#ffffff26;border:1.5px solid #ffffff4d;border-radius:7px;flex-shrink:0;padding:10px 22px;font-size:14px;font-weight:500;transition:background .15s}.btn-pdf:hover{background:#ffffff40}.empty{text-align:center;color:var(--muted);padding:32px 0;font-size:14px}.note{color:var(--muted);margin-top:8px;font-size:12px}.tag{color:var(--muted);background:#e8e6e1;border-radius:10px;margin-left:6px;padding:2px 8px;font-size:11px;display:inline-block}.price-section{margin-bottom:32px}.price-section h3{text-transform:uppercase;letter-spacing:.5px;color:var(--muted);border-bottom:1px solid var(--border);margin-bottom:14px;padding-bottom:8px;font-size:13px;font-weight:600}.price-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;display:grid}.price-field{flex-direction:column;gap:5px;display:flex}.price-field label{color:var(--muted);font-size:12px;line-height:1.3}.price-field input{border:1.5px solid var(--border);width:100%;color:var(--text);background:#fff;border-radius:6px;outline:none;padding:8px 10px;font-size:14px;font-weight:500}.price-field input:focus{border-color:var(--brand)}.price-field .euro-wrap{position:relative}.price-field .euro-wrap:before{content:"€";color:var(--muted);pointer-events:none;font-size:14px;position:absolute;top:50%;left:10px;transform:translateY(-50%)}.price-field .euro-wrap input{padding-left:22px}.save-indicator{color:#2d6a4f;background:#d8f3dc;border-radius:20px;padding:4px 12px;font-size:12px;display:none}.save-indicator.show{display:inline-block}.btn-reset{color:var(--muted);cursor:pointer;background:#fff;border:1.5px solid #c9c6bf;border-radius:7px;padding:9px 18px;font-size:13px;transition:all .15s}.btn-reset:hover{border-color:var(--accent);color:var(--accent)}.settings-header{border-bottom:1px solid var(--border);flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px;padding-bottom:16px;display:flex}.settings-header h2{color:var(--brand);border:none;margin:0;padding:0;font-size:16px;font-weight:600}.settings-actions{align-items:center;gap:10px;display:flex}@media print{header .print-hide,.tabs,.btn-pdf,.settings-tab{display:none!important}body{background:#fff}.form-card{box-shadow:none;break-inside:avoid;border:1px solid #ccc}.result-box{-webkit-print-color-adjust:exact;print-color-adjust:exact;background:#1a1a2e!important}}
+/*$vite$:1*/</style>
+</head>
+<body>
+
+<header>
+  <h1>Sign and More — Prijsberekening</h1>
+  <span class="print-hide">Intern gebruik</span>
+</header>
+
+<div class="container">
+
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('wandframe', this)">Wand textielframe</button>
+    <button class="tab" onclick="showTab('peesdoek', this)">Peesdoek</button>
+    <button class="tab" onclick="showTab('vrijstaand', this)">Vrijstaand frame</button>
+    <button class="tab" onclick="showTab('wandled', this)">Wand LED-frame</button>
+    <button class="tab" onclick="showTab('kamerscherm', this)">Kamerschermen</button>
+    <button class="tab" onclick="showTab('spandoek', this)">Spandoek</button>
+    <button class="tab" onclick="showTab('vlag', this)">Mastvlag / Baniervlag</button>
+    <button class="tab" onclick="showTab('beachvlag', this)">Beachvlag</button>
+    <button class="tab" onclick="showTab('sticker', this)">Stickers / Folie</button>
+    <button class="tab" onclick="showTab('etchfolie', this)">Etchfolie</button>
+    <button class="tab settings-tab" onclick="showTab('prijzen', this)">⚙ Prijzen</button>
+  </div>
+
+  <!-- WAND TEXTIELFRAME -->
+  <div id="tab-wandframe" class="form-card active">
+    <h2>Wand textielframe <span class="tag">incl. montage</span></h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="wf-breedte" placeholder="bv. 120" min="1" oninput="calcWandframe()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="wf-hoogte" placeholder="bv. 80" min="1" oninput="calcWandframe()"></div>
+    </div>
+    <div class="grid-3" style="margin-top:16px">
+      <div class="field">
+        <label>Frame dikte</label>
+        <select id="wf-dikte" onchange="calcWandframe()">
+          <option value="19">19 mm</option>
+          <option value="25">25 mm</option>
+          <option value="27">27 mm</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Frame kleur</label>
+        <select id="wf-kleur" onchange="calcWandframe()">
+          <option value="alu">Aluminium</option>
+          <option value="zwart">Mat zwart</option>
+          <option value="wit">Wit</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Doek</label>
+        <select id="wf-doek" onchange="calcWandframe()">
+          <option value="geen">Zonder doek</option>
+          <option value="eco">Ecodisplay</option>
+          <option value="samba">Samba (LED)</option>
+          <option value="lightex">Lightex (LED)</option>
+          <option value="satijn">Satijn 140 grs/m²</option>
+          <option value="theater">Theater blockout</option>
+        </select>
+      </div>
+    </div>
+    <div id="wf-result"></div>
+  </div>
+
+  <!-- PEESDOEK -->
+  <div id="tab-peesdoek" class="form-card">
+    <h2>Peesdoek diverse materialen</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="pd-breedte" placeholder="bv. 200" min="1" oninput="calcPeesdoek()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="pd-hoogte" placeholder="bv. 100" min="1" oninput="calcPeesdoek()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Soort doek & levertijd</label>
+        <select id="pd-doek" onchange="calcPeesdoek()">
+          <option value="eco">Eco display (5 werkdagen)</option>
+          <option value="eco4">Eco display (4 werkdagen)</option>
+          <option value="eco3">Eco display (3 werkdagen)</option>
+          <option value="samba">Samba voor LED 190grs/m² (5 wkd)</option>
+          <option value="samba4">Samba (4 werkdagen)</option>
+          <option value="samba3">Samba (3 werkdagen)</option>
+          <option value="lightex">Lightex voor LED 260grs/m² (5 wkd)</option>
+          <option value="lightex4">Lightex (4 werkdagen)</option>
+          <option value="lightex3">Lightex (3 werkdagen)</option>
+          <option value="satijn">Satijn 140 grs/m² (5 werkdagen)</option>
+          <option value="satijn4">Satijn (4 werkdagen)</option>
+          <option value="satijn3">Satijn (3 werkdagen)</option>
+          <option value="theater">Theater blockout (5 werkdagen)</option>
+          <option value="theater4">Theater blockout (4 werkdagen)</option>
+          <option value="theater3">Theater blockout (3 werkdagen)</option>
+        </select>
+      </div>
+    </div>
+    <div id="pd-result"></div>
+  </div>
+
+  <!-- VRIJSTAAND -->
+  <div id="tab-vrijstaand" class="form-card">
+    <h2>Vrijstaand textielframe</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="vr-breedte" placeholder="bv. 100" min="1" oninput="calcVrijstaand()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="vr-hoogte" placeholder="bv. 200" min="1" oninput="calcVrijstaand()"></div>
+    </div>
+    <div class="grid-3" style="margin-top:16px">
+      <div class="field">
+        <label>Frame dikte</label>
+        <select id="vr-dikte" onchange="calcVrijstaand()">
+          <option value="44">44 mm</option>
+          <option value="80">80 mm</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Frame kleur</label>
+        <select id="vr-kleur" onchange="calcVrijstaand()">
+          <option value="alu">Aluminium</option>
+          <option value="zwart">Mat zwart</option>
+          <option value="wit">Wit</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Bevestiging</label>
+        <select id="vr-bevestiging" onchange="calcVrijstaand()">
+          <option value="hangend">Hangend aan ogen</option>
+          <option value="vrijstaand">Vrijstaand op grondplaten</option>
+        </select>
+      </div>
+    </div>
+    <div class="field" style="margin-top:16px">
+      <label>Akoestiek</label>
+      <select id="vr-akoestiek" onchange="calcVrijstaand()">
+        <option value="0">Zonder akoestiek verbetering</option>
+        <option value="1">Met akoestiek verbetering (40mm foam)</option>
+      </select>
+    </div>
+    <div id="vr-result"></div>
+  </div>
+
+  <!-- WAND LED -->
+  <div id="tab-wandled" class="form-card">
+    <h2>Wand LED-textielframe</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="wl-breedte" placeholder="bv. 100" min="1" oninput="calcWandLED()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="wl-hoogte" placeholder="bv. 200" min="1" oninput="calcWandLED()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Frame dikte</label>
+        <select id="wl-dikte" onchange="calcWandLED()">
+          <option value="50">50 mm</option>
+          <option value="60">60 mm</option>
+          <option value="90">90 mm</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Frame kleur</label>
+        <select id="wl-kleur" onchange="calcWandLED()">
+          <option value="alu">Aluminium</option>
+          <option value="zwart">Mat zwart</option>
+          <option value="wit">Wit</option>
+        </select>
+      </div>
+    </div>
+    <div id="wl-result"></div>
+  </div>
+
+  <!-- KAMERSCHERMEN -->
+  <div id="tab-kamerscherm" class="form-card">
+    <h2>Kamerschermen</h2>
+    <div class="grid-3">
+      <div class="field"><label>Panel breedte (cm)</label><input type="number" id="ks-breedte" placeholder="bv. 80" min="1" oninput="calcKamerscherm()"></div>
+      <div class="field"><label>Panel hoogte (cm)</label><input type="number" id="ks-hoogte" placeholder="bv. 160" min="1" oninput="calcKamerscherm()"></div>
+      <div class="field"><label>Aantal schermen</label><input type="number" id="ks-aantal" placeholder="bv. 4" min="1" value="1" oninput="calcKamerscherm()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Frame profiel</label>
+        <select id="ks-frame" onchange="calcKamerscherm()">
+          <option value="44">44 mm</option>
+          <option value="80">80 mm</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Akoestiek</label>
+        <select id="ks-akoestiek" onchange="calcKamerscherm()">
+          <option value="0">Zonder akoestiek</option>
+          <option value="1">Met akoestiek verbetering</option>
+        </select>
+      </div>
+    </div>
+    <div id="ks-result"></div>
+  </div>
+
+  <!-- SPANDOEK -->
+  <div id="tab-spandoek" class="form-card">
+    <h2>Spandoek</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="sp-breedte" placeholder="bv. 300" min="1" oninput="calcSpandoek()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="sp-hoogte" placeholder="bv. 100" min="1" oninput="calcSpandoek()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Materiaal</label>
+        <select id="sp-materiaal" onchange="calcSpandoek()">
+          <option value="bisonyl">Bisonyl Frontlit</option>
+          <option value="mesh">Mesh (winddoorlatend)</option>
+          <option value="blockout">Blockout (dubbelzijdig)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Levertijd</label>
+        <select id="sp-levertijd" onchange="calcSpandoek()">
+          <option value="5">5 werkdagen</option>
+          <option value="4">4 werkdagen</option>
+          <option value="3">3 werkdagen</option>
+        </select>
+      </div>
+    </div>
+    <div id="sp-result"></div>
+  </div>
+
+  <!-- VLAG -->
+  <div id="tab-vlag" class="form-card">
+    <h2>Mastvlag / Baniervlag</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="vl-breedte" placeholder="bv. 100" min="1" oninput="calcVlag()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="vl-hoogte" placeholder="bv. 200" min="1" oninput="calcVlag()"></div>
+    </div>
+    <div class="field" style="margin-top:16px">
+      <label>Type & materiaal</label>
+      <select id="vl-materiaal" onchange="calcVlag()">
+        <option value="mast_vlg">Mastvlag — Vlaggenstof 117 Grs/m²</option>
+        <option value="mast_poly">Mastvlag — Polymesh (winddoorlatend)</option>
+        <option value="banier_vlg">Baniervlag — Vlaggenstof 117 Grs/m²</option>
+        <option value="banier_poly">Baniervlag — Polymesh (winddoorlatend)</option>
+      </select>
+    </div>
+    <div id="vl-result"></div>
+  </div>
+
+  <!-- BEACHVLAG -->
+  <div id="tab-beachvlag" class="form-card">
+    <h2>Beachvlag</h2>
+    <div class="grid-2">
+      <div class="field">
+        <label>Type beachvlag</label>
+        <select id="bv-type" onchange="bvUpdateSizes()">
+          <option value="straight">Straightflag</option>
+          <option value="square">Squareflag</option>
+          <option value="wave">Waveflag</option>
+          <option value="drop">Dropflag</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Afmeting</label>
+        <select id="bv-afmeting" onchange="calcBeachvlag()"></select>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Mast inbegrepen?</label>
+        <select id="bv-mast" onchange="calcBeachvlag()">
+          <option value="0">Zonder mast</option>
+          <option value="1">Met mast</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Aantal</label>
+        <input type="number" id="bv-aantal" value="1" min="1" oninput="calcBeachvlag()">
+      </div>
+    </div>
+    <div id="bv-result"></div>
+  </div>
+
+  <!-- STICKERS / FOLIE -->
+  <div id="tab-sticker" class="form-card">
+    <h2>Stickers / Folie</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="st-breedte" placeholder="bv. 100" min="1" oninput="calcSticker()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="st-hoogte" placeholder="bv. 150" min="1" oninput="calcSticker()"></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="field">
+        <label>Materiaal</label>
+        <select id="st-materiaal" onchange="calcSticker()">
+          <option value="polymeer">Polymeerfolie</option>
+          <option value="belettering">Beletteringsfolie</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Levertijd</label>
+        <select id="st-levertijd" onchange="calcSticker()">
+          <option value="5">5 werkdagen</option>
+          <option value="4">4 werkdagen</option>
+          <option value="3">3 werkdagen</option>
+        </select>
+      </div>
+    </div>
+    <div id="st-result"></div>
+  </div>
+
+  <!-- ETCHFOLIE -->
+  <div id="tab-etchfolie" class="form-card">
+    <h2>Etchfolie / Raamfolie</h2>
+    <div class="grid-2">
+      <div class="field"><label>Breedte (cm)</label><input type="number" id="ef-breedte" placeholder="bv. 100" min="1" oninput="calcEtchfolie()"></div>
+      <div class="field"><label>Hoogte (cm)</label><input type="number" id="ef-hoogte" placeholder="bv. 150" min="1" oninput="calcEtchfolie()"></div>
+    </div>
+    <div class="field" style="margin-top:16px">
+      <label>Levertijd</label>
+      <select id="ef-levertijd" onchange="calcEtchfolie()">
+        <option value="5">5 werkdagen</option>
+        <option value="4">4 werkdagen</option>
+        <option value="3">3 werkdagen</option>
+      </select>
+    </div>
+    <div id="ef-result"></div>
+  </div>
+
+  <!-- PRIJZEN EDITOR -->
+  <div id="tab-prijzen" class="form-card">
+    <div class="settings-header">
+      <h2>Prijzen bewerken</h2>
+      <div class="settings-actions">
+        <span id="save-indicator" class="save-indicator">Opgeslagen</span>
+        <button class="btn-reset" onclick="resetPrices()">Herstel standaardprijzen</button>
+      </div>
+    </div>
+    <p style="font-size:13px; color:var(--muted); margin-bottom:24px;">Alle prijzen worden automatisch opgeslagen op deze computer. De berekeningen gebruiken direct deze waarden.</p>
+
+    <div id="price-editor"></div>
+  </div>
+
+</div>
+
+</body>
+</html>
