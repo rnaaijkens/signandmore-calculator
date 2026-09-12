@@ -1,0 +1,20 @@
+{
+  "name": "signandmore-calculator",
+  "version": "1.0.0",
+  "description": "Standalone offline prijscalculator voor Sign and More (signandmore.nl). Vervangt de oorspronkelijke WordPress/Gravity Forms calculators nadat de webshop is gestopt.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^8.3.0",
+    "vite-plugin-singlefile": "^2.3.3",
+    "vitest": "^4.1.11"
+  }
+}
