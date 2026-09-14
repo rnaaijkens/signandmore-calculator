@@ -22,7 +22,7 @@ containerstickers) en 69 (V-bord, vaste `basePrice`) geen prijsformules voor een
 product uit de calculator. Bruikbaar blijven:
 
 | idx | formulier | product | code |
-|-----|-----------|---------|------|
+| --- | --------- | ------- | ---- |
 | 7 | Vrijstaande textielframes (1) | vrijstaand frame | `priceVrijstaand` |
 | 9 | Peesdoek diverse materialen (1) | peesdoek | `pricePeesdoek` |
 | 57 | Peesdoek diverse materialen Deff. (1) | peesdoek | `pricePeesdoek` |
@@ -113,7 +113,7 @@ formulier expliciet en met commentaar waarom. Twee tabellen:
 Zes bestanden, elk met een kopcommentaar dat benoemt uit welk formulier de
 verwachtingen komen.
 
-```
+```text
 tests/wandframe.prijzen.test.js    tests/wandframe.formules.test.js
 tests/peesdoek.prijzen.test.js     tests/peesdoek.formules.test.js
 tests/vrijstaand.prijzen.test.js   tests/vrijstaand.formules.test.js
@@ -184,7 +184,7 @@ Dit hoort zo en mag niet worden weggepoetst.
 ## Bestanden
 
 | bestand | wijziging |
-|---|---|
+| --- | --- |
 | `vitest.config.js` | `include` uitgebreid met `tests/**/*.test.js` |
 | `tests/helpers/gf-bron.js` | nieuw |
 | `tests/helpers/gf-formule.js` | nieuw |
