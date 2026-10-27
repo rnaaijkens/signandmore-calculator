@@ -21,7 +21,7 @@
         `).join(``)}
       </div>
     </div>
-  `).join(``)}function h(e){let t=e.dataset.key,n=parseFloat(e.value);!isNaN(n)&&n>=0&&(d(t,n),l())}function g(){confirm(`Wil je alle prijzen terugzetten naar de oorspronkelijke waarden?`)&&(u(),m(),f())}function _(e){return`€\xA0`+e.toFixed(2).replace(`.`,`,`)}var v=1.21;function y(e,t,n,r){let i=document.getElementById(e);if(n<=0||isNaN(n)){i.innerHTML=`<div class="empty">Voer afmetingen in om de prijs te berekenen.</div>`;return}i.innerHTML=`
+  `).join(``)}function h(e){let t=e.dataset.key,n=parseFloat(e.value);!isNaN(n)&&n>=0&&(d(t,n),l())}function g(){confirm(`Wil je alle prijzen terugzetten naar de oorspronkelijke waarden?`)&&(u(),m(),f())}function _(e){return`€\xA0`+e.toFixed(2).replace(`.`,`,`)}var v=1.21;function y(e,t,n,r){let i=document.getElementById(e);i.innerHTML=n<=0||isNaN(n)?`<div class="empty">Voer afmetingen in om de prijs te berekenen.</div>`:`
     <div class="breakdown" style="margin-top:20px">
       ${t.map(e=>`<div class="breakdown-row"><span class="key">${e.label}</span><span class="val">${_(e.val)}</span></div>`).join(``)}
       <div class="breakdown-row total"><span>Totaal excl. BTW</span><span>${_(n)}</span></div>
